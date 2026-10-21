@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
@@ -48,7 +48,6 @@
   <line x1="178" y1="268" x2="242" y2="268" class="line"/>
   <text x="210" y="258" text-anchor="middle" class="cap">一句話</text>
   <line x1="448" y1="268" x2="482" y2="268" class="line"/>
-  <!-- tools group -->
   <rect x="650" y="196" width="286" height="136" class="group"/>
   <text x="662" y="190" class="cap" fill="#2a7" font-weight="700">工具箱</text>
   <g>
@@ -62,34 +61,8 @@
   <path d="M400,222 C440,172 600,172 650,214" class="tline"/>
   <text x="520" y="166" text-anchor="middle" class="cap" fill="#2a7">Hermes 去用工具，結果交回模型</text>
   <text x="345" y="342" text-anchor="middle" class="cap">一輪一輪：模型決定 → Hermes 執行 → 結果回給模型 → 再決定，直到做完（agent loop）</text>
-  <line x1="24" y1="366" x2="936" y2="366" class="sep"/>
-
-  <!-- ③ Codex / Claude Code -->
-  <text x="24" y="402" class="title">③ Codex、Claude Code（也是 AI Agent，但是給寫程式的人用）</text>
-  <rect x="60" y="460" width="110" height="56" class="box user"/>
-  <text x="115" y="494" text-anchor="middle" class="lbl">你</text>
-  <rect x="250" y="442" width="190" height="92" class="box agent"/>
-  <text x="345" y="476" text-anchor="middle" class="lbl">Codex / Claude Code</text>
-  <text x="345" y="498" text-anchor="middle" class="cap">結構和 Hermes 一樣</text>
-  <text x="345" y="518" text-anchor="middle" class="cap">工具箱不同</text>
-  <rect x="490" y="460" width="120" height="56" class="box model"/>
-  <text x="550" y="494" text-anchor="middle" class="lbl">模型</text>
-  <text x="550" y="536" text-anchor="middle" class="cap">只能接自家模型</text>
-  <line x1="178" y1="488" x2="242" y2="488" class="line"/>
-  <line x1="448" y1="488" x2="482" y2="488" class="line"/>
-  <rect x="650" y="416" width="286" height="118" class="group"/>
-  <text x="662" y="410" class="cap" fill="#2a7" font-weight="700">工具箱</text>
-  <g>
-    <rect x="662" y="426" width="128" height="32" class="tool"/><text x="726" y="447" text-anchor="middle">專案程式碼</text>
-    <rect x="798" y="426" width="128" height="32" class="tool"/><text x="862" y="447" text-anchor="middle">終端機、測試</text>
-    <rect x="662" y="470" width="264" height="50" class="tool" stroke-dasharray="5 4"/>
-    <text x="794" y="490" text-anchor="middle" fill="#888">信箱、排程、Telegram、記憶</text>
-    <text x="794" y="510" text-anchor="middle" fill="#888">沒有，或很弱</text>
-  </g>
-  <path d="M400,442 C440,380 600,380 650,434" class="tline"/>
-  <text x="345" y="562" text-anchor="middle" class="cap">定位是寫程式的助手，在一個專案資料夾裡工作。</text>
 
   <!-- footer -->
-  <rect x="24" y="586" width="912" height="40" fill="#fff8e6" stroke="#e0c27a" rx="6"/>
-  <text x="480" y="611" text-anchor="middle" style="font-size:14px;fill:#333">最大差別：① 你搬資料給模型；②③ 模型透過 agent 自己動手。Hermes 和 Codex 是同一類，差在工具箱：一個做老師的事，一個寫程式。</text>
+  <rect x="24" y="372" width="912" height="40" fill="#fff8e6" stroke="#e0c27a" rx="6"/>
+  <text x="480" y="397" text-anchor="middle" style="font-size:14px;fill:#333">最大差別：① 你搬資料給模型；② 模型透過 Hermes 自己動手。模型是同一個，差在中間有沒有 agent。</text>
 </svg>
